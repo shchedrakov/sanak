@@ -1,1 +1,135 @@
-<h1>Hello, world!</h1>
+<!DOCTYPE html>
+<html class="page" lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>dunzoMERCHANT</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  </head>
+  <body class="page__body">
+    <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0; clip: rect(0 0 0 0);">
+      <defs>
+        <symbol id="icon-card" viewBox="0 0 42 30">
+          <path d="M4.16634 0.5H37.833C39.674 0.5 41.1663 2.14162 41.1663 4.16667V26.1667C41.1663 28.1917 39.674 29.8333 37.833 29.8333H4.16634C2.32539 29.8333 0.833008 28.1917 0.833008 26.1667V4.16667C0.833008 2.14162 2.32539 0.5 4.16634 0.5ZM4.4996 4.16667V26.1667H37.4996V4.16667H4.4996ZM8.16641 18.8333V22.5H11.8331V18.8333H8.16641ZM13.6664 22.5V18.8333H19.1664V22.5H13.6664ZM30.1664 18.8333V22.5H33.8331V18.8333H30.1664ZM24.6664 22.5V18.8333H28.3331V22.5H24.6664ZM13.6664 9.66667H8.16641V15.1667H13.6664V9.66667Z"></path>
+        </symbol>
+        <symbol id="icon-paypass" viewBox="0 0 24 24">
+          <path d="M19 11.9994C19 8.42024 18.146 5.12973 16.7143 2.63942L14.9171 3.53529C16.1877 5.69424 16.994 8.67482 16.994 11.9994C16.994 15.324 16.1877 18.3046 14.9171 20.4635L16.7143 21.3594C18.146 18.8691 19 15.5786 19 11.9994ZM14.988 11.9994C14.988 9.16846 14.253 6.54955 13.011 4.48546L11.2114 5.38252C12.3071 7.13755 12.982 9.44731 12.982 11.9994C12.982 14.5515 12.3071 16.8613 11.2114 18.6163L13.011 19.5134C14.253 17.4493 14.988 14.8304 14.988 11.9994ZM9.36873 6.30103C10.3833 7.92067 10.976 9.88645 10.976 11.9994C10.976 14.1124 10.3833 16.0782 9.36873 17.6978L7.56526 16.7988C8.44596 15.465 8.97006 13.8054 8.97006 11.9994C8.97006 10.1935 8.44596 8.53383 7.56526 7.20002L9.36873 6.30103ZM6.96407 11.9994C6.96407 10.5692 6.54372 9.23194 5.8086 8.07567L4 8.97722C4.60973 9.86792 4.95808 10.9022 4.95808 11.9994C4.95808 13.0967 4.60973 14.1309 4 15.0216L5.8086 15.9232C6.54372 14.7669 6.96407 13.4297 6.96407 11.9994Z"></path>
+        </symbol>
+        <symbol id="icon-upi" viewBox="0 0 22 17">
+          <path d="M1.81818 0H20.1818C21.186 0 22 0.89543 22 2V14C22 15.1046 21.186 16 20.1818 16H10V14H20V7H2V9H0V2C0 0.89543 0.814028 0 1.81818 0ZM20 2V5H2V2H20ZM0 14H4.58579L3.29289 15.2929L4.70711 16.7071L8.41421 13L4.70711 9.29289L3.29289 10.7071L4.58579 12H0V14Z"></path>
+        </symbol>
+        <symbol id="icon-wallet" viewBox="0 0 20 20">
+          <path d="M13.4506 0.402678C14.5126 0.099229 15.6196 0.714213 15.923 1.77628C15.9741 1.95497 16 2.13989 16 2.32573V4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H2C0.89543 20 0 19.1046 0 18H0.0267034C0.00895177 17.8925 0 17.7835 0 17.6743V5.7543C0 4.86134 0.591955 4.07656 1.45056 3.83125L13.4506 0.402678ZM8.14005 18H18V10H16V14.2457C16 15.1387 15.408 15.9234 14.5494 16.1687L8.14005 18ZM18 6V8H16V6H18ZM2 5.75427V17.6742L14 14.2457V2.3257L2 5.75427ZM12 8C12 8.55228 11.5523 9 11 9C10.4477 9 10 8.55228 10 8C10 7.44771 10.4477 7 11 7C11.5523 7 12 7.44771 12 8Z"></path>
+        </symbol>
+      </defs>
+    </svg>
+    <header class="page-header header">
+      <div class="header__content"><a class="header__logo logo" href="#"><img src="img/logo.png" alt="" width="48" height="48">
+          <div class="header__logo-text">dunzo<span>MERCHANT</span></div></a>
+        <div class="header__user-wrap">
+          <div class="header__user header-user">
+            <div class="header-user__img"><img class="header-user__icon" src="img/user-icon.jpg" alt="" width="46" height="50"></div>
+            <div class="header-user__name">John Doe</div>
+          </div>
+          <div class="header__user-menu"><a class="header__user-item" href="#!">logout</a></div>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="payment">
+        <div class="box">
+          <div class="payment__text">
+            <div class="payment__title">Payment Method</div>
+            <div class="payment__subtitle">Choose your payment method</div>
+          </div>
+          <div class="payment__method payment-method">
+            <div class="payment-method__list">
+              <div class="payment-method__item-wrap payment-method__item-wrap--active" data-index="0">
+                <div class="payment-method__item">
+                  <svg class="payment-method__icon" width="24" height="24">
+                    <use xlink:href="#icon-card"></use>
+                  </svg>
+                  <div class="payment-method__title">Debit card / Credit&nbsp;card</div>
+                </div>
+              </div>
+              <div class="payment-method__item-wrap" data-index="1">
+                <div class="payment-method__item">
+                  <svg class="payment-method__icon" width="24" height="24">
+                    <use xlink:href="#icon-paypass"></use>
+                  </svg>
+                  <div class="payment-method__title">Netbanking</div>
+                </div>
+              </div>
+              <div class="payment-method__item-wrap" data-index="2">
+                <div class="payment-method__item">
+                  <svg class="payment-method__icon" width="24" height="24">
+                    <use xlink:href="#icon-upi"></use>
+                  </svg>
+                  <div class="payment-method__title">UPI</div>
+                </div>
+              </div>
+              <div class="payment-method__item-wrap" data-index="3">
+                <div class="payment-method__item">
+                  <svg class="payment-method__icon" width="24" height="24">
+                    <use xlink:href="#icon-wallet"></use>
+                  </svg>
+                  <div class="payment-method__title">COD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment__details payment-details">
+            <form class="payment__form payment-form payment__form--show" action="" data-form-index="0">
+              <div class="payment-form__group">
+                <label class="payment-form__label">Card holder name
+                  <input class="payment-form__input" type="text" placeholder="" required>
+                </label>
+              </div>
+              <div class="payment-form__group-wrap">
+                <div class="payment-form__group">
+                  <label class="payment-form__label">Card Number
+                    <input class="payment-form__input" type="number" placeholder="" required>
+                  </label>
+                </div>
+                <div class="payment-form__group payment-form__group--small">
+                  <label class="payment-form__label">Exp Date
+                    <input class="payment-form__input" type="number" placeholder="" required>
+                  </label>
+                </div>
+                <div class="payment-form__group payment-form__group--small">
+                  <label class="payment-form__label">CCV
+                    <input class="payment-form__input" type="number" placeholder="" required>
+                  </label>
+                </div>
+              </div>
+              <button class="payment-form__btn btn" type="submit">Pay $256</button>
+            </form>
+            <form class="payment__form payment-form" action="" data-form-index="1">
+              <div class="payment__form-info">Payment with Netbanking</div>
+            </form>
+            <form class="payment__form payment-form" action="" data-form-index="2">
+              <div class="payment__form-info">Payment with UPI</div>
+            </form>
+            <form class="payment__form payment-form" action="" data-form-index="3">
+              <div class="payment__form-info">Payment with COD</div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer footer">
+      <div class="footer__content">
+        <div class="footer__copy">Copyright © 2020 abc.com</div>
+        <div class="footer__menu">
+          <div class="footer__menu-item"><a class="footer__menu-link underline" href="#!">Business</a></div>
+          <div class="footer__menu-item"><a class="footer__menu-link" href="#!">Privacy</a></div>
+          <div class="footer__menu-item"><a class="footer__menu-link" href="#!">Terms and Conditions</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
